@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.liuxe.energyweather.ui.widget.VpSwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:textColor="@color/color_2953ff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_vp_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager_today"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+
+
+            </LinearLayout>
+        </com.liuxe.energyweather.ui.widget.VpSwipeRefreshLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_today_share"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/shape_blue_top_circle_bg"
+        android:transitionName="main_share_bottom">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_today"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="36dp" />
+    </FrameLayout>
+</LinearLayout>

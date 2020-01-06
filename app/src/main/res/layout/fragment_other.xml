@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.other.OtherFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dp_10">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_other_share"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:transitionName="main_share_bottom"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_blue_top_circle_bg">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|center_horizontal"
+           android:layout_marginBottom="6dp">
+           <TextView
+               android:id="@+id/tv_city"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:textSize="18dp"
+               android:textStyle="bold"/>
+           <TextView
+               android:id="@+id/tv_weather"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="18dp"
+               android:layout_marginStart="16dp"
+               android:layout_marginEnd="16dp"
+               android:textColor="@color/white"
+               android:textStyle="bold"/>
+           <TextView
+               android:id="@+id/tv_temp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="18dp"
+               android:textColor="@color/white"
+               android:textStyle="bold"/>
+       </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
