@@ -14,3 +14,8 @@
 + 定位+选择城市
 
 ### 截图
+
+![首页](https://github.com/liuxe66/EneryWeather/blob/master/picture/weather1.png)
+![未来一周](https://github.com/liuxe66/EneryWeather/blob/master/picture/weather2.jpg)
+![生活指数](https://github.com/liuxe66/EneryWeather/blob/master/picture/weather3.jpg)
+![添加城市](https://github.com/liuxe66/EneryWeather/blob/master/picture/weather4.png)
