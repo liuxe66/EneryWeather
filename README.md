@@ -15,8 +15,8 @@
 
 ### 截图
 
-<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather1.png" width="40%">
-<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather2.jpg" width="40%">
-<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather3.jpg" width="40%">
-<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather4.png" width="40%">
+<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather1.png" width="50%">
+<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather2.jpg" width="50%">
+<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather3.jpg" width="50%">
+<img src="https://github.com/liuxe66/EneryWeather/blob/master/picture/weather4.png" width="50%">
 
