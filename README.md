@@ -6,7 +6,7 @@
 
 在网上找的[魅族天气API](https://blog.csdn.net/qq_24810411/article/details/89175825)
 
-项目中主要使用kotlin编写LiveData+ViewModel+协程+retrofit2完成
+项目中主要使用kotlin+LiveData+ViewModel+协程+retrofit2完成
  
 ### 主要功能
 
