@@ -1,4 +1,4 @@
-package com.liuxe.energyweather.ui.today
+package com.liuxe.energyweather.ui.weather
 
 import android.widget.ImageView
 import com.chad.library.adapter.base.BaseQuickAdapter
@@ -7,9 +7,9 @@ import com.liuxe.energyweather.R
 import com.liuxe.energyweather.bean.WeatherBean
 import com.liuxe.energyweather.bean.WeatherDetailsInfoBean
 
-class TodayRecycleAdapter(list: List<WeatherDetailsInfoBean.Weather3HoursDetailsInfosBean>) :
+class WeatherDetailsAdapter (list: List<WeatherDetailsInfoBean.Weather3HoursDetailsInfosBean>) :
     BaseQuickAdapter<WeatherDetailsInfoBean.Weather3HoursDetailsInfosBean, BaseViewHolder>(
-        R.layout.item_recycle_today,
+        R.layout.item_recycle_details,
         list
     ) {
     override fun convert(
@@ -33,13 +33,13 @@ class TodayRecycleAdapter(list: List<WeatherDetailsInfoBean.Weather3HoursDetails
     private fun handleImgView(imgView: ImageView, weather: String?) {
         val imgSrc: Int = when (weather) {
             "晴" -> R.drawable.qing
-            "多云" -> R.drawable.duoyun
-            "阵雨" -> R.drawable.zhenyu
-            "阴" -> R.drawable.yin
-            "小雨", "中雨", "大雨", "暴雨" -> R.drawable.yu
-            "小雪", "中雪", "大雪", "暴雪" -> R.drawable.xue
-            "雾", "霾" -> R.drawable.wu
-            else -> R.drawable.yin
+            "多云" -> R.drawable.duoyun_dark
+            "阵雨" -> R.drawable.zhenyu_dark
+            "阴" -> R.drawable.yin_dark
+            "小雨", "中雨", "大雨", "暴雨" -> R.drawable.yu_dark
+            "小雪", "中雪", "大雪", "暴雪" -> R.drawable.xue_dark
+            "雾", "霾" -> R.drawable.wu_dark
+            else -> R.drawable.yin_dark
         }
         imgView.setImageResource(imgSrc)
     }

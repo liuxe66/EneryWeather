@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.gyf.barlibrary.ImmersionBar
 import com.liuxe.energyweather.base.BaseActivity
+import com.liuxe.energyweather.ui.weather.Main2Activity
 import com.liuxe.energyweather.utils.permission.PermissionUtil
 import com.orhanobut.logger.Logger
 
@@ -49,7 +50,7 @@ class SplashActivity : BaseActivity() {
                 finish()
             }
             .setGrant {
-                startActivity(Intent(this@SplashActivity,MainActivity::class.java))
+                startActivity(Intent(this@SplashActivity, Main2Activity::class.java))
                 finish()
             }
             .setNeverAskAgain {

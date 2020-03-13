@@ -26,6 +26,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.weather.Main2Activity"></activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,12 +34,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity> <!-- 高德地图 -->
+        <activity android:name=".MainActivity"></activity> <!-- 高德地图 -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="ede56ac057f5de8a30c04f3127fd965b"></meta-data>
+            android:value="ede56ac057f5de8a30c04f3127fd965b" />
 
         <service android:name="com.amap.api.location.APSService" /> <!-- 屏幕适配 -->
         <meta-data

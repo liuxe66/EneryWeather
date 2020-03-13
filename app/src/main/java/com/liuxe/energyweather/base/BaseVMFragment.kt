@@ -19,8 +19,8 @@ abstract class BaseVMFragment : BaseFragment() {
      * 初始化默认的viewModel
      */
     inline fun <reified VM : BaseViewModel> createViewModel(): VM {
-        val mViewModel = ViewModelProvider(this)[VM::class.java]
-        mViewModel.mException.observe(this, Observer {
+        val mViewModel = ViewModelProvider(requireActivity())[VM::class.java]
+        mViewModel.mException.observe(requireActivity(), Observer {
             toastMessage(it)
         })
         return mViewModel

@@ -9,4 +9,6 @@
     <color name="color_93a8ff">#5876FD</color>
     <color name="white">#fff</color>
     <color name="color_66cbcdfc">#66cbcdfc</color>
+    <color name="color_black">#000</color>
+    <color name="color_999">#999</color>
 </resources>

@@ -7,18 +7,19 @@ import androidx.cardview.widget.CardView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.liuxe.energyweather.R
+import com.liuxe.energyweather.bean.IndexesBean
 import com.liuxe.energyweather.bean.WeatherBean
 import com.liuxe.energyweather.utils.DisplayUtils
 
-class LifeRecycleAdapter(list: List<WeatherBean.IndexesBean>) :
-    BaseQuickAdapter<WeatherBean.IndexesBean, BaseViewHolder>(
+class LifeRecycleAdapter(list: List<IndexesBean>) :
+    BaseQuickAdapter<IndexesBean, BaseViewHolder>(
         R.layout.item_recycle_life,
         list
     ) {
 
     var curPosition = 1
 
-    override fun convert(helper: BaseViewHolder?, item: WeatherBean.IndexesBean?) {
+    override fun convert(helper: BaseViewHolder?, item: IndexesBean?) {
         helper?.setText(R.id.tv_life_state, item?.level)
         var name = when (item?.name) {
             "紫外线强度指数" -> "紫外线指数"

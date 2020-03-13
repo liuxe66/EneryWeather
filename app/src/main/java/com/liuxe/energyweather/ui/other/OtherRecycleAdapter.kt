@@ -5,13 +5,14 @@ import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.liuxe.energyweather.R
 import com.liuxe.energyweather.bean.WeatherBean
+import com.liuxe.energyweather.bean.WeathersBean
 
-class OtherRecycleAdapter(list: List<WeatherBean.WeathersBean>) :
-    BaseQuickAdapter<WeatherBean.WeathersBean, BaseViewHolder>(
+class OtherRecycleAdapter(list: List<WeathersBean>) :
+    BaseQuickAdapter<WeathersBean, BaseViewHolder>(
         R.layout.item_recycle_other,
         list
     ) {
-    override fun convert(helper: BaseViewHolder?, item: WeatherBean.WeathersBean?) {
+    override fun convert(helper: BaseViewHolder?, item: WeathersBean?) {
         var dateList = item?.date?.split("-")
         var dateStr = dateList?.get(1)+"/"+dateList?.get(2)
         var weekStr = item?.week?.replace("星期","周")

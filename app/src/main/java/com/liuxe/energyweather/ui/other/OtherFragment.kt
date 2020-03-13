@@ -10,6 +10,7 @@ import com.liuxe.energyweather.R
 import com.liuxe.energyweather.bean.WeatherBean
 import com.liuxe.energyweather.ui.MainViewModel
 import com.liuxe.energyweather.base.BaseVMFragment
+import com.liuxe.energyweather.bean.WeathersBean
 import kotlinx.android.synthetic.main.fragment_other.*
 import kotlinx.android.synthetic.main.fragment_other.tv_city
 import kotlinx.android.synthetic.main.fragment_today.*
@@ -22,7 +23,7 @@ class OtherFragment : BaseVMFragment() {
 
     var mMainViewModel: MainViewModel? = null
     var mOtherRecycleAdapter:OtherRecycleAdapter? = null
-    var mList:List<WeatherBean.WeathersBean> = ArrayList()
+    var mList:List<WeathersBean> = ArrayList()
 
     override fun getLayoutId() = R.layout.fragment_other_copy
 

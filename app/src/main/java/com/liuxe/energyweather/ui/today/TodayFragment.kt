@@ -12,6 +12,7 @@ import com.liuxe.energyweather.R
 import com.liuxe.energyweather.bean.WeatherBean
 import com.liuxe.energyweather.ui.MainViewModel
 import com.liuxe.energyweather.base.BaseVMFragment
+import com.liuxe.energyweather.bean.WeatherDetailsInfoBean
 import com.liuxe.energyweather.utils.SpUtils
 import com.orhanobut.logger.Logger
 import kotlinx.android.synthetic.main.fragment_today.*
@@ -22,7 +23,7 @@ class TodayFragment : BaseVMFragment() {
     var mMainViewModel: MainViewModel? = null
 
     var mTodayRecycleAdapter: TodayRecycleAdapter? = null
-    var mList: List<WeatherBean.WeatherDetailsInfoBean.Weather3HoursDetailsInfosBean> = ArrayList()
+    var mList: List<WeatherDetailsInfoBean.Weather3HoursDetailsInfosBean> = ArrayList()
 
     var mDotAdapter: TodayDotRecycleAdapter? = null
     var mWeatherList: List<WeatherBean> = ArrayList()

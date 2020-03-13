@@ -14,6 +14,7 @@ import com.liuxe.energyweather.R
 import com.liuxe.energyweather.bean.WeatherBean
 import com.liuxe.energyweather.ui.MainViewModel
 import com.liuxe.energyweather.base.BaseVMFragment
+import com.liuxe.energyweather.bean.IndexesBean
 import kotlinx.android.synthetic.main.fragment_life.*
 import kotlinx.android.synthetic.main.fragment_life.tv_city
 import kotlinx.android.synthetic.main.fragment_today.*
@@ -26,7 +27,7 @@ class LifeFragment : BaseVMFragment() , BaseQuickAdapter.OnItemChildClickListene
 
     var mMainViewModel: MainViewModel? = null
     var mLifeRecycleAdapter:LifeRecycleAdapter? = null
-    var mList:List<WeatherBean.IndexesBean> = ArrayList()
+    var mList:List<IndexesBean> = ArrayList()
 
     override fun getLayoutId() = R.layout.fragment_life
 

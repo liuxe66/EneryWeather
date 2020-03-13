@@ -5,11 +5,9 @@ import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
 import com.liuxe.energyweather.App
 import com.liuxe.energyweather.base.BaseResponse
-import com.liuxe.energyweather.bean.CitiesBean
-import com.liuxe.energyweather.bean.CityBean
-import com.liuxe.energyweather.bean.WeatherBean
 import com.liuxe.energyweather.utils.AssetJsonUtils
 import com.liuxe.energyweather.base.BaseViewModel
+import com.liuxe.energyweather.bean.*
 import com.liuxe.energyweather.http.RetrofitClient
 import com.liuxe.energyweather.utils.SpUtils
 import kotlinx.coroutines.Dispatchers
@@ -21,10 +19,10 @@ class MainViewModel : BaseViewModel() {
     var mMainResponse = MutableLiveData<BaseResponse<WeatherBean>>()
     var weatherListResponse = MutableLiveData<List<WeatherBean>>()
     var weatherResponse = MutableLiveData<WeatherBean>()
-    var realtimeResponse = MutableLiveData<WeatherBean.RealtimeBean>()
-    var weatherInfoResponse = MutableLiveData<WeatherBean.WeatherDetailsInfoBean>()
-    var lifeInfoResponse = MutableLiveData<List<WeatherBean.IndexesBean>>()
-    var weathersResponse = MutableLiveData<List<WeatherBean.WeathersBean>>()
+    var realtimeResponse = MutableLiveData<RealtimeBean>()
+    var weatherInfoResponse = MutableLiveData<WeatherDetailsInfoBean>()
+    var lifeInfoResponse = MutableLiveData<List<IndexesBean>>()
+    var weathersResponse = MutableLiveData<List<WeathersBean>>()
 
     fun getWeatherInfo(cityid: String, curPosition: Int) {
         request({
